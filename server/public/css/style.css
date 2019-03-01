@@ -1,0 +1,22 @@
+.p-auth {
+    padding: 39px 300px 150px 300px;
+}
+
+.pt-130 {
+    padding-top: 130px;
+}
+
+.arrival-time-label {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.depart-time-label {
+    font-weight: bold;
+}
+
+.p-search {
+    position: absolute;
+    top: 35px;
+    right: 32px;
+}
