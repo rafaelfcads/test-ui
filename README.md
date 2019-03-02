@@ -14,5 +14,7 @@ npm install -g gulp
 # serve with hot reload at localhost:4000
 gulp
 
+> Access usin user: teste@teste.com password: 123456
+
 # run all tests
 npm test
