@@ -3,7 +3,7 @@ describe('/app/services/flights', () => {
 
     let FlightService
 
-    beforeEach(angular.mock.module('app.flight'))
+    beforeEach(angular.mock.module('app.services'))
 
     beforeEach(inject(Flights => {
         FlightService = Flights
