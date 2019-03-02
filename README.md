@@ -15,7 +15,7 @@ npm install -g gulp
 gulp
 
 # Access Ui using user and password
-teste@teste.com password: 123456
+user: teste@teste.com password: 123456
 
 # run all tests
 npm test
