@@ -1,0 +1,32 @@
+<div class="container p-auth text-center">
+
+    <form ng-submit="$ctrl.submitForm()">
+      <fieldset ng-disabled="$ctrl.isSubmitting">
+
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    
+        <fieldset class="form-group">
+          <div class="text-center">
+          <input class="form-control form-control-lg"
+            type="email"
+            placeholder="Email"
+            ng-model="$ctrl.formData.email" />
+        </fieldset>
+    
+        <fieldset class="form-group">
+          <input class="form-control form-control-lg"
+            type="password" 
+            placeholder="Password"
+            ng-model="$ctrl.formData.password" />
+        </fieldset>
+    
+        
+          <button class="btn btn-lg btn-primary pull-xs-right"
+            type="submit"
+            ng-bind="::$ctrl.title">
+          </button>
+       
+      </fieldset>
+    </form>
+    
+    </div>
