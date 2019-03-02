@@ -1,0 +1,14 @@
+ 
+
+<ul class="list-group list-group-flush">
+  <flight-item flight="flight" ng-repeat="flight in $ctrl.list"></flight-item>
+</ul>
+
+<div ng-hide="!$ctrl.loading">
+  Loading flight...
+</div>
+
+<div ng-show="!$ctrl.loading && !$ctrl.list.length">
+  No flights are here... yet.
+</div>
+

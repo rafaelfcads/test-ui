@@ -1,0 +1,36 @@
+ <div class="home-page">
+
+  <div class="container page">
+    <div class="row">
+        <form class="form-inline my-2 my-lg-0 p-search">
+            <input class="form-control mr-sm-2" type="text" ng-model="$ctrl.formData.search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0"
+              ng-click="$ctrl.changeList({ type: 'feed', filters: $ctrl.formData.search })">Search
+            </button>
+        </form>        
+    </div>
+    <div class="row">
+
+      <div class="col-md-9">
+        <div class="feed-toggle">
+          <ul class="nav nav-tabs outline-active">
+
+            <li class="nav-item">
+              <a href="" class="nav-link active"
+                ng-class="{ active: $ctrl.listConfig.type === 'all' && !$ctrl.listConfig.filters }"
+                ng-click="$ctrl.changeList({ type: 'all' })">
+                Flight List
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <flight-list limit="10" list-config="$ctrl.listConfig"></flight-list>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

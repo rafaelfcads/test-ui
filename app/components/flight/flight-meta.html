@@ -1,0 +1,9 @@
+<div class="card-title">
+  <img ng-src="{{$ctrl.flight.author.image}}" />
+
+  <div class="info">
+    <a class="author" ng-bind="$ctrl.flight.flightCode"></a>
+    <span class="date" ng-bind="$ctrl.flight.departDate | date: 'longDate' "></span>
+  </div>
+
+</div>

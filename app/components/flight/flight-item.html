@@ -1,0 +1,15 @@
+<li class="list-group-item">
+
+  <flight-meta flight="$ctrl.flight"></flight-meta>
+
+  <a ui-sref="app.flight({ id: $ctrl.flight.id })" class="preview-link">
+    <h1>Flight Number: <label ng-bind="$ctrl.flight.flightCode"></label></h1>
+
+    <span class="depart-time-label">Depart Time: </span><label class="pr-40" ng-bind="$ctrl.flight.departDate | date : format : medium"></label>
+    <span class="arrival-time-label">Arrival Time: </span><label ng-bind="$ctrl.flight.arriveDate | date : medium"></label>
+
+    <p>Flight Status: <label ng-bind="$ctrl.flight.status"></label></p>
+
+    <span>Read more...</span>
+  </a>
+</li>
