@@ -4,6 +4,9 @@
   "description": "Atech test",
   "author": "Rafael Reis",
   "license": "MIT",
+  "scripts": {
+    "test" : "karma start"
+  },
   "dependencies": {
     "babel-preset-es2015": "6.3.13",
     "babelify": "7.2.0",
